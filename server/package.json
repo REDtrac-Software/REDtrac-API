@@ -1,7 +1,7 @@
 {
-  "name": "neatmon.api",
+  "name": "REDtrac-API",
   "version": "1.0.0",
-  "description": "Data services for neatMon API",
+  "description": "Data services for REDtrac API",
   "main": "index.js",
   "scripts": {
     "start": "nodemon",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Howe-Neat/neatmon.api.git"
+    "url": "git+https://github.com/REDtrac-Software/REDtrac-API.git"
   },
-  "author": "neatMon, Inc",
+  "author": "REDtrac",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Howe-Neat/neatmon.api/issues"
+    "url": "https://github.com/REDtrac-Software/REDtrac-API/issues"
   },
-  "homepage": "https://github.com/Howe-Neat/neatmon.api#readme",
+  "homepage": "https://github.com/REDtrac-Software/REDtrac-API#readme",
   "dependencies": {
     "axios": "^0.26.0",
     "bull": "^4.10.2",

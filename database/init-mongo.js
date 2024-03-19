@@ -1,10 +1,10 @@
 /*
     Description: Used to setup the database and the collection names used by the server
-    Author: neatMon, Inc.
+    Author: REDtrac, LLC
     License: MIT
 */
 
-const DATABASE_NAME = 'neatmon_dev';
+const DATABASE_NAME = 'redtrac';
 const DATABASE_COLLECTION = 'device-data';
 
 //////////////////////////////////////////////
@@ -17,7 +17,7 @@ db.createUser({
     roles: [
         {
             role: "readWrite",
-            db: "neatmon_dev"
+            db: "redtrac"
         }
     ]
 });

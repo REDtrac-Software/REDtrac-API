@@ -12,7 +12,7 @@ MongoClient.connect(CONNECTION_URL, { useNewUrlParser: true}, async (error, clie
     if (error) {
         throw error
     }
-    database = client.db('neatmon_dev')
+    database = client.db('redtrac')
     let key = ''
     let payload = ''
     let expirationDate = new Date()

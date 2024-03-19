@@ -7,7 +7,6 @@ console.log('Starting up worker queue...')
 const queue = new bull('data-queue', 'redis://redis:6379');
 console.log('Queue started!')
 const MongoClient = require("mongodb").MongoClient;
-FROM_NEATMON_IO = process.env.FROM_NEATMON_IO
 CONNECTION_URL = process.env.MONGO_URL;
 const DATABASE_NAME = process.env.MONGO_DATABASE_NAME;
 const DATABASE_COLLECTION = process.env.MONGO_DATABASE_COLLECTION_DATA;

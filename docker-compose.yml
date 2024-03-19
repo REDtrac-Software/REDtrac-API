@@ -1,6 +1,6 @@
 
 # Description: Docker compose to bring up environment for API
-# Author: neatMon, Inc.
+# Author: REDtrac, LLC
 # License: MIT
 
 version: "3.8"
@@ -21,7 +21,7 @@ services:
             - MONGO_INITDB_DATABASE=${MONGO_DATABASE_NAME}
         command: mongod
         restart: always
-    neatmon-api:
+    redtrac-api:
         env_file:
             - ./config/.env
         container_name: api

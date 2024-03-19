@@ -1,8 +1,8 @@
 /*
-    Description: API for neatMon
+    Description: API for REDtrac
     License: MIT
-    Author: neatMon, Inc.
-    Date: 2022-02-25
+    Author: REDtrac, LLC
+    Date: 2024-03-19
 */
 
 require('dotenv').config({}); // Get env variables
@@ -20,11 +20,7 @@ const crc32 = require('crc/crc32');
 const queue = new bull('data-queue', 'redis://redis:6379')
 // const fetch = require('isomorphic-fetch')
 
-INSIDE_NEATMON = process.env.INSIDE_NEATMON
-console.log(INSIDE_NEATMON)
-
 console.log("Setting up app.  Getting environment variables");
-FROM_NEATMON_IO = process.env.FROM_NEATMON_IO
 CONNECTION_URL = process.env.MONGO_URL;
 const DATABASE_NAME = process.env.MONGO_DATABASE_NAME;
 const DATABASE_COLLECTION = process.env.MONGO_DATABASE_COLLECTION_DATA;
@@ -33,12 +29,6 @@ const MONGO_DATABASE_EDITOR_USER = process.env.MONGO_DATABASE_EDITOR_USER;
 const MONGO_DATABASE_EDITOR_PASSWORD = process.env.MONGO_DATABASE_EDITOR_PASSWORD;
 console.log("Connecting with User: " + MONGO_DATABASE_EDITOR_USER);
 console.log("pword: " + MONGO_DATABASE_EDITOR_PASSWORD);
-
-// Add the protocol to the connection URL
-// if (FROM_NEATMON_IO !== 'true') {
-//     CONNECTION_URL = "mongodb://" + MONGO_DATABASE_EDITOR_USER + ":" + MONGO_DATABASE_EDITOR_PASSWORD + "@" + CONNECTION_URL + "/" + DATABASE_NAME;
-// }
-
 
 console.log("DB string " + CONNECTION_URL);
 
